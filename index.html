@@ -12,7 +12,7 @@ var base64DecodeChars = new Array(-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1
  */  
 function encode(str){  
 str="";
-var str=document.getElementById("en").value;
+var str=escape(document.getElementById("en").value);
     var out, i, len;  
     var c1, c2, c3; 
     len = str.length;  
@@ -124,7 +124,7 @@ i=i+2;
             break;  
         out += String.fromCharCode(((c3 & 0x03) << 6) | c4);  
     }  
-document.getElementById("en").value=out;
+document.getElementById("en").value=unescape(out);
     return out;  
 }  
 /** 
