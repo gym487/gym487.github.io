@@ -202,28 +202,24 @@ function utf8to16(str){
      background-repeat:no-repeat;
     background-position:top;
 }
-.div-a{ background:url(div-a-bg.png) no-repeat;width:230px;height:136px;padding:10px;} 
+
 
      </style>
 
         </head>  
         <body> 
-<div class="div-a"> 
 
-<h1>阴阳先生</h1> 
 
-  您的话语: <textarea id="en" type="richtext" name="fname"rows="9" cols="50" ></textarea>
+<h1>    阴阳先生</h1> 
+<div>
+ <p style="color:green">您的话语:</p> <textarea id="en" type="richtext" name="fname"rows="9" cols="50" ></textarea></div>
 <br>
-<button onclick="encode();">请先生给你算上一卦(编码)</button><button onclick="decode();">听先生解读卦象中的奥秘(解码)</button>
-<br>
-  卦象: <textarea id="de" type="richtext" name="lname"rows="9" cols="50" ></textarea>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
+<div>
+<button onclick="encode();" style="width:300px;height:50px;float:left;">请先生给你算上一卦(编码)</button><button onclick="decode(); "style="width:300px;height:50px;float:left;">听先生解读卦象中的奥秘(解码)</button></div>
+<br><br>
+<div>
+  <p style="color:green">卦象:</p> <textarea id="de" type="richtext" name="lname"rows="9" cols="50" ></textarea>
+<div>
 <p>powered by QingBiJuShi  gym487@163.com</p>
   </div>
 
