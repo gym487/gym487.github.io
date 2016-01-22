@@ -212,12 +212,12 @@ function utf8to16(str){
 
 <h1>阴阳先生</h1> 
 
-  您的话语: <textarea id="en" type="richtext" name="fname"rows="9" cols="50" ></textarea>
+  您的话语: <textarea id="en" type="richtext" name="fname"rows="10" cols="50" ></textarea>
 <br>
 <button onclick="encode();">请先生给你算上一卦(编码)</button>
 <button onclick="decode();">听先生解读卦象中的奥秘(解码)</button>
 <br>
-  卦象: <textarea id="de" type="richtext" name="lname"rows="9" cols="50" ></textarea>
+  卦象: <textarea id="de" type="richtext" name="lname"rows="10" cols="50" ></textarea>
 <br>
 <br>
 <br>
