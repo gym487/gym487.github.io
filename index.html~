@@ -42,7 +42,7 @@ out+=base64EncodeChars.charAt(bgg.indexOf(str2.substr(i,1)));
 }
 i++;
 }
-document.getElementById("en").value=decode(out);
+document.getElementById("en").value=decode64(out);
 }  
 </script>  
        <title>阴阳先生</title>
