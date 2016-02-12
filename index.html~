@@ -1,6 +1,10 @@
     <html>  
         <head>  <meta charset="UTF-8">
-
+<meta content="width=device-width" name="viewport">
+<script src="./jquery.min.js"></script>
+<link href="./css/bootstrap.min.css" rel="stylesheet">  
+<script src="./js/bootstrap.js"></script>
+           
             <script  type="text/javascript">
 //window.onload=function(){  
 var base64EncodeChars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/";  
@@ -200,7 +204,8 @@ function utf8to16(str){
 <style type="text/css">
         body {background-image: url(2.jpeg);
      background-repeat:no-repeat;
-    background-position:top left;
+    background-position:top center;
+
 }
 
 
@@ -209,19 +214,40 @@ function utf8to16(str){
         </head>  
         <body> 
 
-
+<div class="container">
+<form class="form-horizontal">
+<div class="control-group">
+    <div class="controls">
 <h1>    阴阳先生</h1> 
-<div>
- <p style="color:green">您的话语:</p> <textarea id="en" type="richtext" name="fname"rows="8" cols="50" ></textarea></div>
-<br>
-<div>
-<button onclick="encode();" style="width:300px;height:50px;float:left;">请先生给你算上一卦(编码)</button><button onclick="decode(); "style="width:300px;height:50px;float:left;">听先生解读卦象中的奥秘(解码)</button></div>
-<br><br>
-<div>
-  <p style="color:green">卦象:</p> <textarea id="de" type="richtext" name="lname"rows="8" cols="50" ></textarea>
-<div>
-<p>powered by QingBiJuShi  gym487@163.com</p>
   </div>
+</div>
+<div class="control-group ">
+
+ <label class="control-label text-success" for="en">您的话语:</label> <div class="controls"><textarea id="en"  type="richtext" name="fname"rows="8" cols="50" class="input-block-level" ></textarea></div></div>
+
+  <div class="control-group">
+    <div class="controls">
+<div class="btn-group">
+
+<button onclick="encode();" class="btn btn-large btn-primary">请先生给你算上一卦↓</button><button onclick="decode(); " class="btn btn-large btn-primary">听先生解读卦象中的奥秘↑</button></div></div></div>
+
+<div class="control-group">
+
+  <label class="control-label text-success" for="de">卦象:</label><div class="controls"><textarea id="de" type="richtext" name="lname"rows="8" cols="50"  class="input-block-level"></textarea></div></div>
+
+<div>
+<div class="control-group">
+    <div class="controls">
+<br>
+<br>
+
+<p>powered by QingBiJuShi  gym487@163.com</p>
+<a herf="https://github.com/gym487/">My GitHub Page</link>
+  </div>
+</div>
+  </div>
+</div>
+</form>
 
 
 
